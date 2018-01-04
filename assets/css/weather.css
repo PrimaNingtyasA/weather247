@@ -1,0 +1,109 @@
+body{
+	background-color: #212121;
+}
+.logo{
+	width: 46.9%;
+	height: 75px;
+	float: left;
+	padding-left: 80px;
+	display: inline-table;
+}
+.nav{
+	width: 46.9%;
+	height: 75px;
+	float: left;
+	display: inline-table;
+}
+.nav .menu {
+	list-style: none;
+	float: right;
+	margin-right: 75px;
+}
+.nav .menu .menu-item {
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+}
+.nav .menu .menu-item a {
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial Rounded MT';
+}
+.nav .menu .menu-item.active a, .nav .menu .menu-item:hover a {
+    border-color: #009ad8;
+    color: #009ad8; 
+}
+.container{
+	width: 1200px;
+	height: 450px;
+	background-color: #424242;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	box-shadow: 2px 6px 10px 2px #000000;
+	display: inline-table;
+	font-family: 'Arial Rounded MT';
+	color: white;
+}
+.forecast-header{
+	width: 450px;
+	height: 50px;
+	float: left;
+	background-color: #414141;
+}
+.forecast-content{
+	width: 450px;
+	height: 400px;
+	float: left;
+	background-color: #494949;
+}
+.forecast-container{
+	width: 450px;
+	height: 450px;
+	float: left;
+}
+.graphic-header{
+	width: 750px;
+	height: 50px;
+	background-color: #313131;
+}
+.float-right {
+	float: right !important;
+}
+.graphic-content{
+	width: 750px;
+	height: 400px;
+	background-color: #393939;
+}
+.graphic-container{
+	width: 750px;
+	height: 450px;
+}
+.card{
+	width: 1200px;
+	height: 300px;
+	margin-top: 500px;
+	background-color: #424242;
+	box-shadow: 2px 6px 10px 2px #000000;
+	display: inline-table;
+	font-family: 'Arial Rounded MT';
+	color: white;
+}
+#text{
+	font-size: 17.5px;
+	margin-top: 12.5px;
+	margin-left: 12.5px;
+}
+#tabel{
+	border-color: white;
+	border-style: solid;
+}
