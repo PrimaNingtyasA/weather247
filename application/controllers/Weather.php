@@ -29,6 +29,9 @@ class Weather extends CI_Controller {
 	{
 		$data['weathers'] = $this->model_weather->get_weather(); 
 		$this->load->view('home', $data);
+		
+		$x['data']=$this->model_weather->get_data_temp();
+		$this->load->view('home',$x);
 	}
 
 	public function history()
