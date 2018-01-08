@@ -38,7 +38,42 @@
 	</div>
 	<div class="graphic-container float-right">
 		<div class="graphic-header float-right">
+			<?php
+        foreach($data as $datab){
+            $jam[] = $datab->jam;
+            $temp[] = (float) $datab->temp;
+			}
+    ?>
 			<h6 id="text">Temperature Graph</h6>
+			<center>
+			<canvas id="canvas" width="700" height="180"></canvas>
+
+	<!--Load chart js-->
+	<script type="text/javascript" src="<?php echo base_url().'assets/chartjs/chart.min.js'?>"></script>
+	<script>
+
+            var lineChartData = {
+                labels : <?php echo json_encode($jam);?>,
+                datasets : [
+                    
+                    {
+                        fillColor: "rgba(60,141,188,0.9)",
+                        strokeColor: "rgba(60,141,188,0.8)",
+                        pointColor: "#3b8bba",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(152,235,239,1)",
+                        data : <?php echo json_encode($temp);?>
+                    }
+
+                ]
+                
+            }
+
+        var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Line(lineChartData);
+        
+   	</script>
+			</center>
 		</div>
 		<div class="graphic-content float-right">
 		</div>
