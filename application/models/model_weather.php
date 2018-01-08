@@ -16,5 +16,15 @@
 			return $query->result();
 		}
 		//get products data from database by CategoriID	
+		function get_data_temp(){
+        $query = $this->db->query("SELECT jam,temp FROM temp_graph");
+         
+        if($query->num_rows() > 0){
+            foreach($query->result() as $data){
+                $hasil[] = $data;
+            }
+            return $hasil;
+        }
+    }
 	}
 ?>
