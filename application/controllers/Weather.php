@@ -30,6 +30,7 @@ class Weather extends CI_Controller {
 		$data['weathers'] = $this->model_weather->get_weather(); 
 		$this->load->view('home', $data);
 		
+		//model grafik
 		$x['data']=$this->model_weather->get_data_temp();
 		$this->load->view('home',$x);
 	}

@@ -9,13 +9,14 @@
 	{
 		$this->load->database();
 	}
-
+		//get products data from database by CategoriID
 		function get_weather()
 		{
 			$query = $this->db->get('note');
 			return $query->result();
 		}
-		//get products data from database by CategoriID	
+		
+		//get temperature data from database 
 		function get_data_temp(){
         $query = $this->db->query("SELECT jam,temp FROM temp_graph");
          

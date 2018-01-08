@@ -38,7 +38,8 @@
 	</div>
 	<div class="graphic-container float-right">
 		<div class="graphic-header float-right">
-			<?php
+		
+		<?php
         foreach($data as $datab){
             $jam[] = $datab->jam;
             $temp[] = (float) $datab->temp;
