@@ -50,7 +50,7 @@
 			<canvas id="canvas" width="700" height="180"></canvas>
 
 	<!--Load chart js-->
-	<script type="text/javascript" src="<?php echo base_url().'assets/chartjs/chart.min.js'?>"></script>
+	<script type="text/javascript" src="<?php echo base_url().'assets/js/chart.min.js'?>"></script>
 	<script>
 
             var lineChartData = {
